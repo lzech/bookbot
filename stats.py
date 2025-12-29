@@ -11,3 +11,9 @@ def count_characters(text):
         for character in word:
            num_characters.update({character: num_characters.get(character, 0) + 1})
     return num_characters
+
+def sort_dict(dict):
+    sorted_dict = sorted(dict.items(), key=lambda item:item[1], reverse=True)
+    return sorted_dict
+
+
